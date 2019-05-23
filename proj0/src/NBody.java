@@ -35,7 +35,7 @@ public class NBody{
         // Draw background and planets
         StdDraw.setScale(-radius, radius);
         StdDraw.clear();
-        StdDraw.picture(0, 0, "images/starfield.jpg");
+        StdDraw.picture(0, 0, "../images/starfield.jpg");
         for (Body b : bArr){
             b.draw();
         }
@@ -57,7 +57,7 @@ public class NBody{
                 bArr[i].update(dt, xForces[i], yForces[i]);
             }
 
-            StdDraw.picture(0, 0, "images/starfield.jpg");
+            StdDraw.picture(0, 0, "../images/starfield.jpg");
             for (Body b : bArr) {
                 b.draw();
             }
